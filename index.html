@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizLandia - Testes e Diversão</title>
+  <meta name="description" content="Descubra quem é seu crush ideal, qual personagem combina com você e muito mais! Testes divertidos e rápidos.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ======== ESTILO BÁSICO ======== */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 40px;
+    }
+
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .quiz-card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .quiz-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.25);
+    }
+
+    .quiz-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .quiz-card p {
+      font-size: 0.95em;
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🎯 QuizLândia</h1>
+    <p>Descubra quem você é, teste seus conhecimentos e se divirta!</p>
+  </header>
+
+  <section class="quiz-grid">
+    <div class="quiz-card" onclick="window.location.href='quiz-crush.html'">
+      <h3>💘 Teste do Crush Ideal</h3>
+      <p>Descubra quem seria seu par perfeito com este quiz divertido.</p>
+    </div>
+
+    <div class="quiz-card" onclick="window.location.href='quiz-personalidade.html'">
+      <h3>🧠 Qual é o seu tipo de personalidade?</h3>
+      <p>Um teste rápido para revelar o que te faz único!</p>
+    </div>
+
+    <div class="quiz-card" onclick="window.location.href='quiz-anime.html'">
+      <h3>🎬 Qual personagem de anime você seria?</h3>
+      <p>Baseado em suas respostas, descubra qual personagem combina com você.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 QuizLândia - Criado com ❤️ por <a href="https://github.com/seuusuario" target="_blank">BillQuiz</a></p>
+  </footer>
+</body>
+</html>
